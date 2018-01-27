@@ -1,21 +1,19 @@
 import os
-try:
-    from selenium import webdriver
-    from selenium.webdriver import ActionChains
-    from selenium.webdriver.common.keys import Keys
-except:
-    "You don't have Selenium installed. This is required to run the program. In your terminal, run 'pip install selenium'"
-import subprocess
+from selenium import webdriver
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
 import csv
+import os
+cwd = os.getcwd()
+print(cwd)
 
 emails = []
 urls = []
 passwords = []
 
-output = subprocess.run("pwd", shell=True, stdout=subprocess.PIPE,
-                        universal_newlines=True)
-location = str(output.stdout)+'/chromedriver'
-location = location.replace("\n","")
+
+location = str(cwd)+'/chromedriver'
+location = location.replace("\n'","")
 print(location)
 chromedriver = location
 os.environ["webdriver.chrome.driver"] = chromedriver
