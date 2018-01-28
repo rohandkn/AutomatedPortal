@@ -2,7 +2,7 @@
 
 #Usage
 
-To use this tool, download the repository. After, add all your school links, usernames, and passwords to the .csv file. After that, run the python file main.py.
+For OSX and Linux machines currently. Windows support is coming soon. To use this tool, download the repository. After, add all your school links, usernames, and passwords to the .csv file. After that, run the python file main.py.
 
 #Dependencies
 
